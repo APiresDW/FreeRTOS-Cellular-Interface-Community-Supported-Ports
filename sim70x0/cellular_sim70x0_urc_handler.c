@@ -116,14 +116,14 @@ static CellularPktStatus_t _parseSocketOpenNextTok( const char * pToken,
                 { 4,  "Parameter invalid"                                          },
                 { 6,  "Invalid IP address"                                         },
                 { 7,  "Not support the function"                                   },
-                { 12, "Can갽t bind the port"                                       },
-                { 13, "Can갽t listen the port"                                     },
-                { 20, "Can갽t resolv the host"                                     },
+                { 12, "Can혖ft bind the port"                                       },
+                { 13, "Can혖ft listen the port"                                     },
+                { 20, "Can혖ft resolv the host"                                     },
                 { 21, "Network not active"                                         },
                 { 23, "Remote refuse"                                              },
-                { 24, "Certificate갽s time expired"                                },
-                { 25, "Certificate갽s common name does not match"                  },
-                { 26, "Certificate갽s common name does not match and time expired" },
+                { 24, "Certificate혖fs time expired"                                },
+                { 25, "Certificate혖fs common name does not match"                  },
+                { 26, "Certificate혖fs common name does not match and time expired" },
                 { 27, "Connect failed"                                             },
             };
 
@@ -769,7 +769,7 @@ static void _Cellular_ProcessSocketDataInd( CellularContext_t * pContext,
         atCoreStatus = CELLULAR_AT_ERROR;
     }
 
-    if( atCoreStatus == CELLULAR_SUCCESS )
+    if( atCoreStatus == CELLULAR_AT_SUCCESS )
     {
         return;
     }
